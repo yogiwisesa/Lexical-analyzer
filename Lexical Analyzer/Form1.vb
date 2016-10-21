@@ -35,9 +35,7 @@ Space:
                                             i = i + 1
                                             GoTo Space
                                         Case "("
-                                            token = token + " 2 9"
                                             i = i + 1
-                                            GoTo Space
                                         Case Else
                                             token = token + "error"
                                     End Select
