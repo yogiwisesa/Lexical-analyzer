@@ -8,7 +8,7 @@
         i = 0
 
 Space:
-        On Error Resume Next
+        'On Error Resume Next
         If i < length Then
             Select Case sText.Chars(i)
                 Case "p", "q", "r", "s" ' PQRS
@@ -34,8 +34,6 @@ Space:
                                             token = token + " 2"
                                             i = i + 1
                                             GoTo Space
-                                        Case "("
-                                            i = i + 1
                                         Case Else
                                             token = token + "error"
                                     End Select
